@@ -1,4 +1,5 @@
 import React from 'react'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Header from './components/Header'
 import HeroSection from './components/HeroSection'
 import TrustedSection from './components/TrustedSection'
@@ -14,27 +15,35 @@ import ComparisonSection from './components/ComparisonSection'
 import ServicesSection from './components/ServicesSection'
 import ReviewsSection from './components/ReviewsSection'
 import Footer from './components/Footer'
+import PricingPage from './pages/PricingPage'
 import './App.css'
 
 function App() {
   return (
-    <div className="min-h-screen bg-white">
-      <Header />
-      <HeroSection />
-      <TrustedSection />
-      <FeaturesSection />
-      <DetailedFeaturesSection />
-      <ComparisonSection />
-      <ServicesSection />
-      <ReviewsSection />
-      <OverviewSection />
-      <DetailedFeaturesListSection />
-      <ImportanceSection />
-      <ExamTypesSection />
-      <StudentsTeachersSection />
-      <FAQSection />
-      <Footer />
-    </div>
+    <Router>
+      <Routes>
+        <Route path="/" element={
+          <div className="min-h-screen bg-white">
+            <Header />
+            <HeroSection />
+            <TrustedSection />
+            <FeaturesSection />
+            <DetailedFeaturesSection />
+            <ComparisonSection />
+            <ServicesSection />
+            <ReviewsSection />
+            <OverviewSection />
+            <DetailedFeaturesListSection />
+            <ImportanceSection />
+            <ExamTypesSection />
+            <StudentsTeachersSection />
+            <FAQSection />
+            <Footer />
+          </div>
+        } />
+        <Route path="/pricing" element={<PricingPage />} />
+      </Routes>
+    </Router>
   );
 }
 
