@@ -20,7 +20,7 @@ const Footer = () => {
           {/* Company Info */}
           <div className="lg:col-span-1">
             <div className="mb-6">
-              <img src="/src/assets/logo.webp" alt="Pesofts Logo" className="w-48 h-12 object-contain mb-4" />
+              <img src="/public/logo.webp" alt="Pesofts Logo" className="w-48 h-12 object-contain mb-4" />
               <p className="text-gray-300 leading-relaxed mb-6">
                 Leading provider of online examination software solutions for educational institutions worldwide. 
                 Secure, reliable, and feature-rich platform for conducting exams online.
