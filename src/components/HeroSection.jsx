@@ -3,8 +3,7 @@ import onlineExamImage from '../assets/online-examination-software.webp';
 
 const HeroSection = () => {
   return (
-    <div className="relative bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 min-h-screen flex items-center overflow-hidden">
-      {/* Background Pattern */}
+    <section className="relative bg-gradient-to-br from-orange-500 via-red-500 to-pink-600 min-h-screen flex items-center overflow-hidden" role="banner" aria-label="Hero section">
       <div className="absolute inset-0 bg-black opacity-10"></div>
       <div className="absolute inset-0">
         <div className="absolute top-20 left-10 w-72 h-72 bg-white opacity-5 rounded-full blur-3xl"></div>
@@ -14,15 +13,13 @@ const HeroSection = () => {
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Content */}
           <div className="text-white">
-            {/* Badge */}
             <div className="inline-flex items-center text-orange-600 px-4 py-2 bg-white bg-opacity-20 backdrop-blur-sm rounded-full text-sm font-semibold mb-3 mt-3">
               <span className="w-2 h-2 bg-green-400 rounded-full mr-2 animate-pulse"></span>
               Trusted by 1000+ Educational Institutions
             </div>
 
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight mb-8 bg-gradient-to-r from-white to-yellow-200 bg-clip-text text-transparent" role="heading" aria-level="1">
               Best Online Examination Software System
             </h1>
             
@@ -31,7 +28,6 @@ const HeroSection = () => {
               Perfect for schools, colleges, coaching centers, and corporate training.
             </p>
             
-            {/* Feature List */}
             <div className="space-y-4 mb-8">
               <div className="flex items-center space-x-4 group">
                 <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 group-hover:scale-110 transition-transform duration-200">
@@ -79,7 +75,6 @@ const HeroSection = () => {
               </div>
             </div>
             
-            {/* CTA Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 mb-8">
               <button className="bg-white text-orange-600 px-8 py-4 rounded-xl font-bold text-lg hover:bg-gray-100 transition-all duration-200 transform hover:scale-105 shadow-xl">
                 View Pricing Plans
@@ -94,7 +89,6 @@ const HeroSection = () => {
               </div>
             </div>
 
-            {/* Trust Indicators */}
             <div className="flex flex-wrap items-center gap-6 text-white text-opacity-80 pb-6">
               <div className="flex items-center space-x-2">
                 <svg className="w-5 h-5 text-green-400" fill="currentColor" viewBox="0 0 20 20">
@@ -117,7 +111,6 @@ const HeroSection = () => {
             </div>
           </div>
           
-          {/* Right Side - Device Mockups */}
           <div className="relative">
             <div className="relative z-10">
               <img 
@@ -127,24 +120,11 @@ const HeroSection = () => {
               />
             </div>
             
-            {/* Floating Elements */}
-            {/* <div className="absolute top-10 -left-10 bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-green-400 rounded-full animate-pulse"></div>
-                <span className="text-white text-sm font-semibold">Live Exam</span>
-              </div>
-            </div> */}
             
-            {/* <div className="absolute bottom-20 -right-10 bg-white bg-opacity-20 backdrop-blur-sm rounded-2xl p-4 shadow-xl">
-              <div className="flex items-center space-x-3">
-                <div className="w-3 h-3 bg-blue-400 rounded-full animate-pulse"></div>
-                <span className="text-white text-sm font-semibold">Proctoring Active</span>
-              </div>
-            </div> */}
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

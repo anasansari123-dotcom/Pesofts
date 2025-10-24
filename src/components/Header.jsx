@@ -9,12 +9,10 @@ const Header = () => {
   };
 
   return (
-    <header className="w-full sticky top-0 z-50">
-      {/* Top Bar - Modern Gradient */}
-      <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 sm:py-3">
+    <header className="w-full sticky top-0 z-50" role="banner">
+      <div className="bg-gradient-to-r from-gray-900 via-gray-800 to-gray-900 text-white py-2 sm:py-3" role="complementary" aria-label="Contact information">
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex flex-row justify-between items-center">
-            {/* Left side - Contact Info */}
             <div className="flex flex-row items-center space-x-2 sm:space-x-4 lg:space-x-6">
               <div className="flex items-center space-x-1 sm:space-x-2">
                 <svg className="w-3 h-3 sm:w-4 sm:h-4 text-orange-400 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
@@ -32,7 +30,6 @@ const Header = () => {
               </div>
             </div>
 
-            {/* Right side - CTA */}
             <div className="flex items-center">
               <button className="bg-orange-500 hover:bg-orange-600 text-white px-2 py-1 sm:px-4 sm:py-2 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 transform hover:scale-105 whitespace-nowrap">
                 Free Demo
@@ -42,19 +39,16 @@ const Header = () => {
         </div>
       </div>
 
-      {/* Main Header - Modern Design */}
       <div className="bg-white shadow-lg border-b border-gray-100">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center py-4">
-            {/* Logo Section */}
             <div className="flex items-center space-x-3">
               <Link to="/" className="hover:opacity-80 transition-opacity duration-200">
                 <img src="/logo.webp" alt="Pesofts Logo" className="w-52 h-15 object-contain" />
               </Link>
             </div>
 
-            {/* Desktop Navigation Menu */}
-            <nav className="hidden lg:flex space-x-8">
+            <nav className="hidden lg:flex space-x-8" role="navigation" aria-label="Main navigation">
               <Link to="/" className="text-gray-700 hover:text-orange-600 font-semibold transition-all duration-200 relative group">
                 HOME
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-orange-500 transition-all duration-200 group-hover:w-full"></span>
@@ -85,14 +79,12 @@ const Header = () => {
               </a>
             </nav>
 
-            {/* Desktop CTA Button */}
             <div className="hidden lg:flex items-center space-x-4">
               <button className="bg-gradient-to-r from-orange-500 to-red-500 hover:from-orange-600 hover:to-red-600 text-white px-6 py-3 rounded-lg font-semibold transition-all duration-200 transform hover:scale-105 shadow-lg">
                 Get Started
               </button>
             </div>
 
-            {/* Mobile Menu Button */}
             <div className="lg:hidden">
               <button 
                 onClick={toggleMobileMenu}
@@ -109,9 +101,8 @@ const Header = () => {
             </div>
           </div>
 
-          {/* Mobile Menu */}
           {isMobileMenuOpen && (
-            <div className="lg:hidden border-t border-gray-200 bg-white shadow-lg">
+            <div className="lg:hidden border-t border-gray-200 bg-white shadow-lg" role="navigation" aria-label="Mobile navigation">
               <div className="px-2 pt-2 pb-3 space-y-1">
                 <Link 
                   to="/" 

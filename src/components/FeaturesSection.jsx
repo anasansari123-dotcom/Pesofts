@@ -86,15 +86,12 @@ const FeaturesSection = () => {
               key={index}
               className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 hover:border-orange-500 hover:border-2"
             >
-              {/* Gradient Background */}
               <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
               
-              {/* Icon */}
               <div className={`relative w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
                 {feature.icon}
               </div>
               
-              {/* Content */}
               <div className="relative">
                 <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors duration-200">
                   {feature.title}
@@ -104,13 +101,11 @@ const FeaturesSection = () => {
                 </p>
               </div>
               
-              {/* Hover Effect Border */}
               <div className={`absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gradient-to-r group-hover:from-${feature.gradient.split(' ')[1]} group-hover:to-${feature.gradient.split(' ')[3]} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
             </div>
           ))}
         </div>
 
-        {/* Bottom CTA */}
         <div className="text-center mt-16">
           <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white">
             <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Examination Process?</h3>

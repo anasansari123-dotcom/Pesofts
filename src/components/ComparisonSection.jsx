@@ -89,7 +89,6 @@ const ComparisonSection = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-8">
-          {/* Other Vendors Column */}
           <div className="bg-gray-50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">
               OTHER VENDORS
@@ -120,7 +119,6 @@ const ComparisonSection = () => {
             </div>
           </div>
 
-          {/* Pesofts Column */}
           <div className="bg-orange-50 rounded-lg p-8 border-2 border-orange-200">
             <h3 className="text-2xl font-bold text-orange-600 mb-8 text-center">
               PESOFTS EXAMINATION SOFTWARE

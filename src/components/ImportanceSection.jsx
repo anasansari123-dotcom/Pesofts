@@ -14,7 +14,6 @@ const ImportanceSection = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12">
-          {/* Left Side - Reduces Exam Burdens */}
           <div className="bg-gray-50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Education Software Reduces Exam Burdens, Taking Exam Anywhere
@@ -63,7 +62,6 @@ const ImportanceSection = () => {
             </div>
           </div>
           
-          {/* Right Side - Improve Communication */}
           <div className="bg-orange-50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6">
               Improve Communication Gap Between Teachers and Students

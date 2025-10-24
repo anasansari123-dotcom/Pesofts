@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 
 const PricingSection = () => {
-  // FAQ state management
-  const [openFAQ, setOpenFAQ] = useState(1); // First FAQ is open by default
+  const [openFAQ, setOpenFAQ] = useState(1);
 
   const toggleFAQ = (faqNumber) => {
     setOpenFAQ(openFAQ === faqNumber ? null : faqNumber);
@@ -144,9 +143,7 @@ const PricingSection = () => {
           animation: fadeIn 0.3s ease-out;
         }
       `}</style>
-      {/* Modern Header Section with Gradient Background */}
       <div className="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 py-20 mt-[-65px]">
-        {/* Animated Background Elements */}
         <div className="absolute inset-0">
           <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
           <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -189,14 +186,11 @@ const PricingSection = () => {
         </div>
       </div>
 
-      {/* Pricing Plans Section */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
-        {/* Section Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center text-black mb-8">
           Online Examination Software Price With & Without Customization
         </h2>
 
-        {/* Color Separator Line */}
         <div className="flex justify-center mb-12">
           <div className="flex space-x-1">
             <div className="w-16 h-1 bg-blue-400"></div>
@@ -207,11 +201,9 @@ const PricingSection = () => {
           </div>
         </div>
 
-        {/* Pricing Cards - Original Design */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {pricingPlans.map((plan) => (
             <div key={plan.id} className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
-              {/* Plan Header */}
               <div className="text-center mb-6">
                 <h3 className={`text-2xl font-bold ${getColorClasses(plan.color)} mb-2`}>
                   {plan.name}
@@ -227,7 +219,6 @@ const PricingSection = () => {
                 </p>
               </div>
 
-              {/* Features List */}
               <div className="space-y-3 mb-8">
                 {plan.features.map((feature, index) => (
                   <div key={index} className="flex items-start">
@@ -246,7 +237,6 @@ const PricingSection = () => {
                 ))}
               </div>
 
-              {/* CTA Button */}
               <button className={`w-full ${plan.buttonColor} text-white font-bold py-3 px-6 rounded-lg transition-colors duration-200`}>
                 {plan.buttonText}
               </button>
@@ -254,7 +244,6 @@ const PricingSection = () => {
           ))}
         </div>
 
-        {/* Pricing Comparison Table */}
         <div className="mt-20">
           <h3 className="text-3xl md:text-4xl font-bold text-center text-black mb-12">
             Feature Comparison Table
@@ -262,7 +251,6 @@ const PricingSection = () => {
           
           <div className="overflow-x-auto">
             <table className="w-full border-collapse bg-white shadow-lg rounded-lg overflow-hidden">
-              {/* Table Header */}
               <thead>
                 <tr className="bg-gradient-to-r from-red-500 to-orange-500">
                   <th className="text-left text-white font-bold py-4 px-6 text-lg">FEATURES</th>
@@ -274,9 +262,7 @@ const PricingSection = () => {
                 </tr>
               </thead>
               
-              {/* Table Body */}
               <tbody>
-                {/* Teaching App & Software */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Teaching App & Software
@@ -307,7 +293,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Exam Conducting & Quiz Maker */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Exam Conducting & Quiz Maker
@@ -338,7 +323,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Computer Based Test Software(CBT) */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Computer Based Test Software(CBT)
@@ -369,7 +353,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Personalised Theme */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Personalised Theme
@@ -404,7 +387,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Proctoring Enabled */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Proctoring Enabled*
@@ -435,7 +417,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Payment Gateway */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Payment Gateway
@@ -470,7 +451,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Shared App */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Shared App *
@@ -501,7 +481,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* 24*7 Support */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     24*7 Support
@@ -516,7 +495,6 @@ const PricingSection = () => {
                   <td className="text-center py-4 px-4 text-gray-600">Whatsapp/Email/Ticket Support</td>
                 </tr>
 
-                {/* Quick Report */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Quick Report
@@ -551,7 +529,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Concurrent Test */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Concurrent Test
@@ -586,7 +563,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Question Bank */}
                 <tr className="border-b border-gray-200 hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Question Bank
@@ -621,7 +597,6 @@ const PricingSection = () => {
                   </td>
                 </tr>
 
-                {/* Other Features */}
                 <tr className="hover:bg-gray-50">
                   <td className="py-4 px-6 text-gray-800 font-medium">
                     Other Features
@@ -659,7 +634,6 @@ const PricingSection = () => {
             </table>
           </div>
 
-          {/* Pricing Information Text */}
           <div className="mt-12 bg-white rounded-lg shadow-lg p-8 border border-gray-200">
             <div className="max-w-4xl mx-auto">
               <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
@@ -755,7 +729,6 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Modern Feature Cards Section */}
           <div className="mt-24">
             <div className="text-center mb-16">
               <div className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -773,7 +746,6 @@ const PricingSection = () => {
             </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-              {/* Card 1: Simplified as well as Experienced Team */}
               <div className="group bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 border border-blue-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-6">
@@ -792,7 +764,6 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              {/* Card 2: Highly Secure */}
               <div className="group bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 border border-green-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-6">
@@ -811,7 +782,6 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              {/* Card 3: Concurrent Students Participating */}
               <div className="group bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-8 border border-purple-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-6">
@@ -830,7 +800,6 @@ const PricingSection = () => {
                 </div>
               </div>
 
-              {/* Card 4: Backups */}
               <div className="group bg-gradient-to-br from-orange-50 to-red-100 rounded-2xl p-8 border border-orange-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
                   <div className="flex-shrink-0 mr-6">
@@ -851,7 +820,6 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Modern FAQ Section */}
           <div className="mt-24">
             <div className="text-center mb-16">
               <div className="inline-block bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
@@ -868,7 +836,6 @@ const PricingSection = () => {
               </p>
             </div>
             
-            {/* Modern Decorative Line */}
             <div className="flex justify-center mb-16">
               <div className="flex space-x-2">
                 <div className="w-3 h-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full animate-bounce"></div>
@@ -880,9 +847,7 @@ const PricingSection = () => {
               </div>
             </div>
 
-            {/* Modern FAQ Items */}
             <div className="max-w-4xl mx-auto space-y-6">
-              {/* FAQ Item 1 */}
               <div className="group bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl border border-blue-200 overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div 
                   className="flex items-center justify-between p-8 cursor-pointer hover:bg-gradient-to-r hover:from-blue-100 hover:to-indigo-100 transition-all duration-300"
@@ -922,7 +887,6 @@ const PricingSection = () => {
                 )}
               </div>
 
-              {/* FAQ Item 2 */}
               <div className="bg-orange-100 rounded-lg border border-orange-200 overflow-hidden">
                 <div 
                   className="flex items-center justify-between p-6 cursor-pointer hover:bg-orange-200 transition-colors duration-200"
@@ -955,7 +919,6 @@ const PricingSection = () => {
                 )}
               </div>
 
-              {/* FAQ Item 3 */}
               <div className="bg-orange-100 rounded-lg border border-orange-200 overflow-hidden">
                 <div 
                   className="flex items-center justify-between p-6 cursor-pointer hover:bg-orange-200 transition-colors duration-200"
@@ -988,7 +951,6 @@ const PricingSection = () => {
                 )}
               </div>
 
-              {/* FAQ Item 4 */}
               <div className="bg-orange-100 rounded-lg border border-orange-200 overflow-hidden">
                 <div 
                   className="flex items-center justify-between p-6 cursor-pointer hover:bg-orange-200 transition-colors duration-200"
@@ -1021,7 +983,6 @@ const PricingSection = () => {
                 )}
               </div>
 
-              {/* FAQ Item 5 */}
               <div className="bg-orange-100 rounded-lg border border-orange-200 overflow-hidden">
                 <div 
                   className="flex items-center justify-between p-6 cursor-pointer hover:bg-orange-200 transition-colors duration-200"
@@ -1055,7 +1016,6 @@ const PricingSection = () => {
               </div>
             </div>
 
-            {/* Modern CTA Button */}
             <div className="text-center mt-16">
               <div className="relative inline-block">
                 <button className="group relative bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 hover:from-red-600 hover:via-pink-600 hover:to-purple-700 text-white font-bold py-6 px-16 rounded-2xl text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl shadow-xl overflow-hidden">

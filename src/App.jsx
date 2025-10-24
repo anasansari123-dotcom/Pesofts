@@ -26,7 +26,7 @@ function App() {
           <Route path="/" element={
             <div className="min-h-screen">
               <Header />
-              <main>
+              <main role="main">
                 <HeroSection />
                 <TrustedSection />
                 <FeaturesSection />

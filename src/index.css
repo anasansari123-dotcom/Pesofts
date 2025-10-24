@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-/* Custom Scrollbar Styling */
 ::-webkit-scrollbar {
   width: 12px;
 }
@@ -24,7 +23,7 @@
   background: #f1f5f9;
 }
 
-/* For Firefox */
+
 * {
   scrollbar-width: thin;
   scrollbar-color: #f97316 #f1f5f9;

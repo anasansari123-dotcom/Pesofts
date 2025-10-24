@@ -49,7 +49,6 @@ const DetailedFeaturesListSection = () => {
           </h2>
         </div>
         
-        {/* Basic Features List */}
         <div className="mb-16">
           <h3 className="text-2xl font-bold text-gray-900 mb-8 text-center">General Features</h3>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
@@ -70,7 +69,6 @@ const DetailedFeaturesListSection = () => {
           </div>
         </div>
         
-        {/* Detailed Features */}
         <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-8">
           {detailedFeatures.map((feature, index) => (
             <div

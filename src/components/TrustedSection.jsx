@@ -62,13 +62,11 @@ const TrustedSection = () => {
                 <p className="text-xs text-gray-500 font-medium">{partner.name}</p>
               </div>
               
-              {/* Hover Effect */}
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-orange-500 to-red-500 opacity-0 group-hover:opacity-5 transition-opacity duration-300"></div>
             </div>
           ))}
         </div>
 
-        {/* Stats Section */}
         <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
           <div className="text-center">
             <div className="text-3xl md:text-4xl font-bold text-orange-600 mb-2">1000+</div>

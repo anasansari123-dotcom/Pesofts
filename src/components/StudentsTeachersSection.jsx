@@ -20,7 +20,6 @@ const StudentsTeachersSection = () => {
         </div>
         
         <div className="max-w-4xl mx-auto space-y-8">
-          {/* Paragraph 1 - Student Benefits */}
           <div className="bg-orange-50 rounded-lg p-8">
             <p className="text-lg text-gray-700 leading-relaxed">
               Pesofts online examination software incorporates features to meet the requirements of both students and teachers. 
@@ -29,7 +28,6 @@ const StudentsTeachersSection = () => {
             </p>
           </div>
 
-          {/* Paragraph 2 - Learning Experience */}
           <div className="bg-gray-50 rounded-lg p-8">
             <p className="text-lg text-gray-700 leading-relaxed">
               The software supports various question formats, such as MCQs (Multiple Choice Questions) and True/False types, 
@@ -39,7 +37,6 @@ const StudentsTeachersSection = () => {
             </p>
           </div>
 
-          {/* Paragraph 3 - Teacher Benefits */}
           <div className="bg-green-50 rounded-lg p-8">
             <p className="text-lg text-gray-700 leading-relaxed">
               The online examination system provides analyzed results post-test, enabling teachers to offer immediate feedback 
@@ -49,7 +46,6 @@ const StudentsTeachersSection = () => {
             </p>
           </div>
 
-          {/* Paragraph 4 - Comparison and Clients */}
           <div className="bg-blue-50 rounded-lg p-8">
             <p className="text-lg text-gray-700 leading-relaxed mb-6">
               While many similar software types are available, not all provide exclusive features like question banks, 
@@ -72,7 +68,6 @@ const StudentsTeachersSection = () => {
             </div>
           </div>
 
-          {/* CTA Button */}
           <div className="text-center mt-12">
             <button className="bg-yellow-400 text-black px-12 py-4 rounded-lg font-bold text-lg hover:bg-yellow-300 transition-colors duration-200 shadow-lg">
               TRY FREE DEMO

@@ -11,7 +11,6 @@ const OverviewSection = () => {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          {/* Left Side - Content */}
           <div>
             <div className="mb-8">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Overview</h3>
@@ -31,7 +30,6 @@ const OverviewSection = () => {
             </div>
           </div>
           
-          {/* Right Side - Features Highlight */}
           <div className="bg-gray-50 rounded-lg p-8">
             <h3 className="text-2xl font-bold text-gray-900 mb-6 text-center">Exclusive Features</h3>
             <div className="space-y-4">
