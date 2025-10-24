@@ -21,28 +21,32 @@ import './App.css'
 function App() {
   return (
     <Router>
-      <Routes>
-        <Route path="/" element={
-          <div className="min-h-screen bg-white">
-            <Header />
-            <HeroSection />
-            <TrustedSection />
-            <FeaturesSection />
-            <DetailedFeaturesSection />
-            <ComparisonSection />
-            <ServicesSection />
-            <ReviewsSection />
-            <OverviewSection />
-            <DetailedFeaturesListSection />
-            <ImportanceSection />
-            <ExamTypesSection />
-            <StudentsTeachersSection />
-            <FAQSection />
-            <Footer />
-          </div>
-        } />
-        <Route path="/pricing" element={<PricingPage />} />
-      </Routes>
+      <div className="min-h-screen bg-white">
+        <Routes>
+          <Route path="/" element={
+            <div className="min-h-screen">
+              <Header />
+              <main>
+                <HeroSection />
+                <TrustedSection />
+                <FeaturesSection />
+                <DetailedFeaturesSection />
+                <ComparisonSection />
+                <ServicesSection />
+                <ReviewsSection />
+                <OverviewSection />
+                <DetailedFeaturesListSection />
+                <ImportanceSection />
+                <ExamTypesSection />
+                <StudentsTeachersSection />
+                <FAQSection />
+              </main>
+              <Footer />
+            </div>
+          } />
+          <Route path="/pricing" element={<PricingPage />} />
+        </Routes>
+      </div>
     </Router>
   );
 }

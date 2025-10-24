@@ -32,17 +32,20 @@ const ServicesSection = () => {
   {services.map((service, index) => (
     <div
       key={index}
-      className="relative bg-white p-8 shadow-sm hover:shadow-md transition-shadow duration-300 text-center
-                 rounded-[20px] overflow-hidden transform skew-x-[-6deg]"
+      className="group relative bg-white p-8 shadow-sm hover:shadow-xl transition-all duration-300 text-center
+                 rounded-[20px] overflow-hidden transform skew-x-[-6deg] border-2 border-transparent hover:border-orange-500"
     >
-      <div className="absolute inset-0 bg-gray-50 -z-10 skew-x-[6deg]"></div>
+      <div className="absolute inset-0 bg-gray-50 -z-10 skew-x-[6deg] group-hover:bg-gradient-to-br group-hover:from-orange-50 group-hover:to-red-50 transition-colors duration-300"></div>
       <div className="flex justify-center items-center h-full transform skew-x-[6deg]">
         <img
           src={service.logo}
           alt={service.name}
-          className="max-w-[180px] h-auto object-contain"
+          className="max-w-[180px] h-auto object-contain group-hover:scale-110 transition-transform duration-300"
         />
       </div>
+      
+      {/* Hover Effect Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-orange-500/5 to-red-500/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300 skew-x-[6deg]"></div>
     </div>
   ))}
 </div>

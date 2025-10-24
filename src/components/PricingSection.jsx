@@ -144,15 +144,48 @@ const PricingSection = () => {
           animation: fadeIn 0.3s ease-out;
         }
       `}</style>
-      {/* Header Section with Gradient Background */}
-      <div className="bg-gradient-to-r from-red-500 to-orange-500 py-16">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold text-white mb-8">
-            Online Exam Software Price - Guaranteed Best Price Software
+      {/* Modern Header Section with Gradient Background */}
+      <div className="relative overflow-hidden bg-gradient-to-br from-indigo-900 via-purple-900 to-pink-800 py-20 mt-[-65px]">
+        {/* Animated Background Elements */}
+        <div className="absolute inset-0">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600/20 to-purple-600/20"></div>
+          <div className="absolute top-10 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
+          <div className="absolute bottom-10 right-10 w-96 h-96 bg-purple-500/10 rounded-full blur-3xl animate-pulse delay-1000"></div>
+        </div>
+        
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="mb-6">
+            <span className="inline-block bg-white/10 backdrop-blur-sm text-white px-4 py-2 rounded-full text-sm font-medium mb-4">
+              🚀 Best Pricing Guaranteed
+            </span>
+          </div>
+          <h1 className="text-5xl md:text-7xl font-bold text-white mb-6 leading-tight">
+            Online Exam Software
+            <span className="block bg-gradient-to-r from-yellow-400 to-orange-400 bg-clip-text text-transparent">
+              Pricing Plans
+            </span>
           </h1>
-          <button className="bg-yellow-400 hover:bg-yellow-500 text-black font-bold py-4 px-8 rounded-lg text-lg transition-colors duration-200">
-            Free Demo Request
-          </button>
+          <p className="text-xl md:text-2xl text-white/80 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Choose the perfect plan for your educational needs. Start with our free trial and scale as you grow.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+            <button className="group bg-gradient-to-r from-yellow-400 to-orange-500 hover:from-yellow-500 hover:to-orange-600 text-black font-bold py-4 px-8 rounded-2xl text-lg transition-all duration-300 transform hover:scale-105 hover:shadow-2xl shadow-lg">
+              <span className="flex items-center">
+                🎯 Free Demo Request
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                </svg>
+              </span>
+            </button>
+            <button className="group bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white font-semibold py-4 px-8 rounded-2xl text-lg transition-all duration-300 border border-white/20 hover:border-white/40">
+              <span className="flex items-center">
+                📞 Contact Sales
+                <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+                </svg>
+              </span>
+            </button>
+          </div>
         </div>
       </div>
 
@@ -174,7 +207,7 @@ const PricingSection = () => {
           </div>
         </div>
 
-        {/* Pricing Cards */}
+        {/* Pricing Cards - Original Design */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
           {pricingPlans.map((plan) => (
             <div key={plan.id} className="bg-white rounded-lg shadow-lg p-6 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
@@ -722,84 +755,95 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* Feature Cards Section */}
-          <div className="mt-16">
-            <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-12">
-              Key Features & Benefits
-            </h3>
+          {/* Modern Feature Cards Section */}
+          <div className="mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-purple-100 to-pink-100 text-purple-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                ✨ Key Features & Benefits
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Why Choose Our
+                <span className="block bg-gradient-to-r from-purple-600 to-pink-600 bg-clip-text text-transparent">
+                  Platform?
+                </span>
+              </h3>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Discover the powerful features that make our exam software the perfect choice for educational institutions.
+              </p>
+            </div>
             
             <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Card 1: Simplified as well as Experienced Team */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <div className="group bg-gradient-to-br from-blue-50 to-indigo-100 rounded-2xl p-8 border border-blue-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <div className="flex-shrink-0 mr-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-blue-500 to-indigo-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">👥</span>
+                    </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-3">
-                      Simplified as well as Experienced Team:
+                    <h4 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-blue-600 transition-colors duration-300">
+                      Expert Development Team
                     </h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      Our software is free from any kind of complexities and is designed by an experienced as well as an efficient team of developers.
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      Our software is designed by an experienced and efficient team of developers, ensuring a user-friendly experience free from complexities.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 2: Highly Secure */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <div className="group bg-gradient-to-br from-green-50 to-emerald-100 rounded-2xl p-8 border border-green-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <div className="flex-shrink-0 mr-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-green-500 to-emerald-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">🔒</span>
+                    </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-3">
-                      Highly Secure:
+                    <h4 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-green-600 transition-colors duration-300">
+                      Enterprise-Grade Security
                     </h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      Our team of professionals make sure that all your data is secured by incorporating a secure socket layer certificate.
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      Your data is protected with SSL certificates and advanced security measures implemented by our professional security team.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 3: Concurrent Students Participating */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <div className="group bg-gradient-to-br from-purple-50 to-pink-100 rounded-2xl p-8 border border-purple-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <div className="flex-shrink-0 mr-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-purple-500 to-pink-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">🚀</span>
+                    </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-3">
-                      Concurrent Students Participating In a Particular Time
+                    <h4 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-purple-600 transition-colors duration-300">
+                      Unlimited Concurrent Users
                     </h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      There is no limit on the number of students who have to either participate in the live tests or live classes. Any number of students can easily do this at a particular time.
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      No limits on the number of students participating in live tests or classes. Scale effortlessly with unlimited concurrent users.
                     </p>
                   </div>
                 </div>
               </div>
 
               {/* Card 4: Backups */}
-              <div className="bg-white rounded-lg shadow-lg p-8 border border-gray-200 hover:shadow-xl transition-shadow duration-300">
+              <div className="group bg-gradient-to-br from-orange-50 to-red-100 rounded-2xl p-8 border border-orange-200 hover:shadow-2xl transition-all duration-500 transform hover:-translate-y-2 hover:scale-105">
                 <div className="flex items-start">
-                  <div className="flex-shrink-0 mr-4">
-                    <svg className="w-8 h-8 text-green-500" fill="currentColor" viewBox="0 0 20 20">
-                      <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                    </svg>
+                  <div className="flex-shrink-0 mr-6">
+                    <div className="w-16 h-16 bg-gradient-to-br from-orange-500 to-red-600 rounded-2xl flex items-center justify-center group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-2xl">💾</span>
+                    </div>
                   </div>
                   <div>
-                    <h4 className="text-xl font-bold text-gray-800 mb-3">
-                      Backups:
+                    <h4 className="text-2xl font-bold text-gray-800 mb-4 group-hover:text-orange-600 transition-colors duration-300">
+                      Automated Data Backup
                     </h4>
-                    <p className="text-gray-700 leading-relaxed">
-                      Backups are very important and Users can easily create a backup of all the data as well as the performance of the students.
+                    <p className="text-gray-700 leading-relaxed text-lg">
+                      Create secure backups of all student data and performance metrics with our automated backup system for complete peace of mind.
                     </p>
                   </div>
                 </div>
@@ -807,40 +851,53 @@ const PricingSection = () => {
             </div>
           </div>
 
-          {/* FAQ Section */}
-          <div className="mt-20">
-            <h3 className="text-3xl md:text-4xl font-bold text-center text-gray-800 mb-8">
-              FAQ For Online Examination Software Price
-            </h3>
+          {/* Modern FAQ Section */}
+          <div className="mt-24">
+            <div className="text-center mb-16">
+              <div className="inline-block bg-gradient-to-r from-yellow-100 to-orange-100 text-orange-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
+                ❓ Frequently Asked Questions
+              </div>
+              <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                Got Questions?
+                <span className="block bg-gradient-to-r from-orange-600 to-red-600 bg-clip-text text-transparent">
+                  We've Got Answers
+                </span>
+              </h3>
+              <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+                Find answers to the most common questions about our pricing and features.
+              </p>
+            </div>
             
-            {/* Colorful Decorative Line */}
-            <div className="flex justify-center mb-12">
-              <div className="flex space-x-1">
-                <div className="w-8 h-1 bg-red-500"></div>
-                <div className="w-8 h-1 bg-orange-500"></div>
-                <div className="w-8 h-1 bg-yellow-500"></div>
-                <div className="w-8 h-1 bg-green-400"></div>
-                <div className="w-8 h-1 bg-green-500"></div>
-                <div className="w-8 h-1 bg-blue-400"></div>
-                <div className="w-8 h-1 bg-blue-600"></div>
-                <div className="w-8 h-1 bg-purple-500"></div>
-                <div className="w-8 h-1 bg-gray-600"></div>
+            {/* Modern Decorative Line */}
+            <div className="flex justify-center mb-16">
+              <div className="flex space-x-2">
+                <div className="w-3 h-3 bg-gradient-to-r from-red-500 to-pink-500 rounded-full animate-bounce"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-orange-500 to-yellow-500 rounded-full animate-bounce delay-100"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-yellow-500 to-green-500 rounded-full animate-bounce delay-200"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-green-500 to-blue-500 rounded-full animate-bounce delay-300"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-blue-500 to-purple-500 rounded-full animate-bounce delay-400"></div>
+                <div className="w-3 h-3 bg-gradient-to-r from-purple-500 to-pink-500 rounded-full animate-bounce delay-500"></div>
               </div>
             </div>
 
-            {/* FAQ Items */}
-            <div className="max-w-4xl mx-auto space-y-4">
+            {/* Modern FAQ Items */}
+            <div className="max-w-4xl mx-auto space-y-6">
               {/* FAQ Item 1 */}
-              <div className="bg-orange-100 rounded-lg border border-orange-200 overflow-hidden">
+              <div className="group bg-gradient-to-r from-blue-50 to-indigo-50 rounded-2xl border border-blue-200 overflow-hidden hover:shadow-xl transition-all duration-300">
                 <div 
-                  className="flex items-center justify-between p-6 cursor-pointer hover:bg-orange-200 transition-colors duration-200"
+                  className="flex items-center justify-between p-8 cursor-pointer hover:bg-gradient-to-r hover:from-blue-100 hover:to-indigo-100 transition-all duration-300"
                   onClick={() => toggleFAQ(1)}
                 >
-                  <h4 className="text-lg font-bold text-gray-800">
-                    Q. Can I Take Free Trial For All Educational Software.?
-                  </h4>
-                  <div className="w-8 h-8 bg-orange-600 rounded flex items-center justify-center">
-                    <svg className="w-4 h-4 text-white transition-transform duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                  <div className="flex items-center">
+                    <div className="w-12 h-12 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center mr-4 group-hover:scale-110 transition-transform duration-300">
+                      <span className="text-white text-lg">🎯</span>
+                    </div>
+                    <h4 className="text-xl font-bold text-gray-800 group-hover:text-blue-600 transition-colors duration-300">
+                      Can I Take Free Trial For All Educational Software?
+                    </h4>
+                  </div>
+                  <div className="w-10 h-10 bg-gradient-to-r from-blue-500 to-indigo-600 rounded-xl flex items-center justify-center group-hover:scale-110 transition-all duration-300">
+                    <svg className="w-5 h-5 text-white transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       {openFAQ === 1 ? (
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M20 12H4" />
                       ) : (
@@ -850,13 +907,15 @@ const PricingSection = () => {
                   </div>
                 </div>
                 {openFAQ === 1 && (
-                  <div className="px-6 pb-6 animate-fadeIn">
+                  <div className="px-8 pb-8 animate-fadeIn">
                     <div className="flex items-start">
-                      <svg className="w-5 h-5 text-blue-500 mr-3 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
-                        <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
-                      </svg>
-                      <p className="text-gray-700">
-                        <span className="font-semibold">Ans.</span> Yes.! Anyone Can Take Free Trial For Online Exam Software, Online Teaching App or Other Education Software.
+                      <div className="w-8 h-8 bg-gradient-to-r from-green-400 to-emerald-500 rounded-full flex items-center justify-center mr-4 mt-1 flex-shrink-0">
+                        <svg className="w-4 h-4 text-white" fill="currentColor" viewBox="0 0 20 20">
+                          <path fillRule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clipRule="evenodd" />
+                        </svg>
+                      </div>
+                      <p className="text-gray-700 text-lg leading-relaxed">
+                        <span className="font-bold text-green-600">Yes!</span> Anyone can take a free trial for our Online Exam Software, Online Teaching App, or any other educational software. We believe in letting you experience our platform before making a commitment.
                       </p>
                     </div>
                   </div>
@@ -996,11 +1055,24 @@ const PricingSection = () => {
               </div>
             </div>
 
-            {/* GET QUOTE NOW Button */}
-            <div className="text-center mt-12">
-              <button className="bg-red-600 hover:bg-red-700 text-white font-bold py-4 px-12 rounded-lg text-xl transition-colors duration-200 transform hover:scale-105 shadow-lg">
-                GET QUOTE NOW
-              </button>
+            {/* Modern CTA Button */}
+            <div className="text-center mt-16">
+              <div className="relative inline-block">
+                <button className="group relative bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 hover:from-red-600 hover:via-pink-600 hover:to-purple-700 text-white font-bold py-6 px-16 rounded-2xl text-2xl transition-all duration-500 transform hover:scale-110 hover:shadow-2xl shadow-xl overflow-hidden">
+                  <div className="absolute inset-0 bg-gradient-to-r from-white/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+                  <span className="relative flex items-center">
+                    <span className="mr-3 text-2xl">🚀</span>
+                    GET QUOTE NOW
+                    <svg className="w-6 h-6 ml-3 group-hover:translate-x-2 transition-transform duration-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 7l5 5m0 0l-5 5m5-5H6" />
+                    </svg>
+                  </span>
+                </button>
+                <div className="absolute -inset-1 bg-gradient-to-r from-red-500 via-pink-500 to-purple-600 rounded-2xl blur opacity-30 group-hover:opacity-50 transition-opacity duration-500"></div>
+              </div>
+              <p className="text-gray-600 mt-6 text-lg">
+                Ready to transform your educational experience? Let's get started today!
+              </p>
             </div>
           </div>
           

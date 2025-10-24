@@ -9,7 +9,8 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "White Labelled Software",
-      description: "Make Exam Conducting software & app with your branding."
+      description: "Make Exam Conducting software & app with your branding.",
+      gradient: "from-blue-500 to-purple-600"
     },
     {
       icon: (
@@ -18,7 +19,8 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "Guaranteed Low Cost Best Features Software",
-      description: "Guaranteed Best features like speed examination, smart online exam with low cost, check out software price."
+      description: "Guaranteed Best features like speed examination, smart online exam with low cost, check out software price.",
+      gradient: "from-green-500 to-teal-600"
     },
     {
       icon: (
@@ -27,7 +29,8 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "Live Class & Record Video's",
-      description: "Start live classes from any device, mobile or desktop accordingly & sell recorded video's."
+      description: "Start live classes from any device, mobile or desktop accordingly & sell recorded video's.",
+      gradient: "from-orange-500 to-red-600"
     },
     {
       icon: (
@@ -36,7 +39,8 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "Support All Type of Language's",
-      description: "Upload objective & subjective paper with any local language and conduct exam."
+      description: "Upload objective & subjective paper with any local language and conduct exam.",
+      gradient: "from-purple-500 to-pink-600"
     },
     {
       icon: (
@@ -45,7 +49,8 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "Concurrent Live Tests with Proctoring",
-      description: "Create & conduct Unlimited tests in single time from anywhere with pesofts software."
+      description: "Create & conduct Unlimited tests in single time from anywhere with pesofts software.",
+      gradient: "from-indigo-500 to-blue-600"
     },
     {
       icon: (
@@ -54,38 +59,71 @@ const FeaturesSection = () => {
         </svg>
       ),
       title: "Cheat Free Inbuild Proctoring Feature",
-      description: "Proctoring will help your to improving security, Its make ce-hat free examination software."
+      description: "Proctoring will help your to improving security, Its make ce-hat free examination software.",
+      gradient: "from-emerald-500 to-green-600"
     }
   ];
 
   return (
-    <div className="bg-white py-16">
+    <div className="bg-gradient-to-br from-gray-50 to-white py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 bg-orange-100 text-orange-800 rounded-full text-sm font-semibold mb-4">
+            <span className="w-2 h-2 bg-orange-500 rounded-full mr-2"></span>
+            Advanced Features
+          </div>
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Explore Anti-Cheating Online Exam Software Features
           </h2>
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
+            Discover powerful features designed to make online examinations secure, efficient, and user-friendly for educational institutions worldwide.
+          </p>
         </div>
         
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
           {features.map((feature, index) => (
             <div
               key={index}
-              className="bg-white border border-gray-200 rounded-lg p-6 hover:shadow-lg transition-shadow duration-300"
+              className="group relative bg-white rounded-2xl p-8 shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2 border border-gray-100 hover:border-orange-500 hover:border-2"
             >
-              <div className="flex items-center mb-4">
-                <div className="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center text-red-600 mr-4">
-                  {feature.icon}
-                </div>
-                <h3 className="text-lg font-bold text-gray-900">
+              {/* Gradient Background */}
+              <div className={`absolute inset-0 bg-gradient-to-br ${feature.gradient} opacity-0 group-hover:opacity-5 rounded-2xl transition-opacity duration-300`}></div>
+              
+              {/* Icon */}
+              <div className={`relative w-16 h-16 bg-gradient-to-br ${feature.gradient} rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300`}>
+                {feature.icon}
+              </div>
+              
+              {/* Content */}
+              <div className="relative">
+                <h3 className="text-xl font-bold text-gray-900 mb-4 group-hover:text-gray-800 transition-colors duration-200">
                   {feature.title}
                 </h3>
+                <p className="text-gray-600 leading-relaxed group-hover:text-gray-700 transition-colors duration-200">
+                  {feature.description}
+                </p>
               </div>
-              <p className="text-gray-600 leading-relaxed">
-                {feature.description}
-              </p>
+              
+              {/* Hover Effect Border */}
+              <div className={`absolute inset-0 rounded-2xl border-2 border-transparent group-hover:border-gradient-to-r group-hover:from-${feature.gradient.split(' ')[1]} group-hover:to-${feature.gradient.split(' ')[3]} opacity-0 group-hover:opacity-100 transition-opacity duration-300`}></div>
             </div>
           ))}
+        </div>
+
+        {/* Bottom CTA */}
+        <div className="text-center mt-16">
+          <div className="bg-gradient-to-r from-orange-500 to-red-500 rounded-2xl p-8 text-white">
+            <h3 className="text-2xl font-bold mb-4">Ready to Transform Your Examination Process?</h3>
+            <p className="text-lg mb-6 opacity-90">Join thousands of educational institutions already using our platform</p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <button className="bg-white text-orange-600 px-8 py-3 rounded-xl font-bold hover:bg-gray-100 transition-all duration-200 transform hover:scale-105">
+                Start Free Trial
+              </button>
+              <button className="border-2 border-white text-white px-8 py-3 rounded-xl font-bold hover:bg-white hover:text-orange-600 transition-all duration-200">
+                View All Features
+              </button>
+            </div>
+          </div>
         </div>
       </div>
     </div>

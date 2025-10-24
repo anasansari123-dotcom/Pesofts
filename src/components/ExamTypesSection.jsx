@@ -52,8 +52,8 @@ const ExamTypesSection = () => {
           {examTypes.map((examType, index) => (
             <div
               key={index}
-              className={`relative bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-shadow duration-300 ${
-                examType.recommended ? 'ring-2 ring-green-500' : ''
+              className={`relative bg-white rounded-lg p-8 shadow-lg hover:shadow-xl transition-all duration-300 ${
+                examType.recommended ? 'ring-2 ring-green-500 hover:ring-green-600' : 'hover:ring-2 hover:ring-green-500'
               }`}
             >
               {examType.recommended && (
