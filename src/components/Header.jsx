@@ -49,7 +49,7 @@ const Header = () => {
             {/* Logo Section */}
             <div className="flex items-center space-x-3">
               <Link to="/" className="hover:opacity-80 transition-opacity duration-200">
-                <img src="/public/logo.webp" alt="Pesofts Logo" className="w-52 h-15 object-contain" />
+                <img src="/logo.webp" alt="Pesofts Logo" className="w-52 h-15 object-contain" />
               </Link>
             </div>
 
